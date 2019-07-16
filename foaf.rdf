@@ -1,62 +1,51 @@
-<<<<<<< HEAD
-﻿<rdf:RDF
-      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-      xmlns:admin="http://webns.net/mvcb/">
-<foaf:PersonalProfileDocument rdf:about="">
-  <foaf:maker rdf:resource="#me"/>
-  <foaf:primaryTopic rdf:resource="#me"/>
-  <admin:generatorAgent rdf:resource="http://www.ldodds.com/foaf/foaf-a-matic"/>
-  <admin:errorReportsTo rdf:resource="mailto:leigh@ldodds.com"/>
-</foaf:PersonalProfileDocument>
-<foaf:Person rdf:ID="me">
-<foaf:name>disney leon</foaf:name>
-<foaf:title>Sr</foaf:title>
-<foaf:givenname>disney</foaf:givenname>
-<foaf:family_name>leon</foaf:family_name>
-<foaf:nick>disney1993</foaf:nick>
-<foaf:mbox rdf:resource="mailto:difehp_b_@hotmail.com"/>
-<foaf:homepage rdf:resource="disney.com"/>
-<foaf:depiction rdf:resource="ninguna"/>
-<foaf:phone rdf:resource="tel:0960137609"/></foaf:Person>
-</rdf:RDF> 
-=======
-<rdf:RDF
-      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-      xmlns:admin="http://webns.net/mvcb/">
-<foaf:PersonalProfileDocument rdf:about="">
-  <foaf:maker rdf:resource="#me"/>
-  <foaf:primaryTopic rdf:resource="#me"/>
-  <admin:generatorAgent rdf:resource="http://www.ldodds.com/foaf/foaf-a-matic"/>
-  <admin:errorReportsTo rdf:resource="mailto:leigh@ldodds.com"/>
-</foaf:PersonalProfileDocument>
-<foaf:Person rdf:ID="me">
-<foaf:name>Disney León</foaf:name>
-<foaf:title>Sr</foaf:title>
-<foaf:givenname>Disney</foaf:givenname>
-<foaf:family_name>León</foaf:family_name>
-<foaf:nick>Disney1993</foaf:nick>
-<foaf:mbox_sha1sum>5253f6cff201f1c0f3390b132ae3525e75719171</foaf:mbox_sha1sum>
-<foaf:homepage rdf:resource="http://disneywebdeveloper.tk"/>
-<foaf:depiction rdf:resource="https://scontent.fgye1-1.fna.fbcdn.net/v/t1.0-9/17759806_1412096535499925_7644211177403556641_n.jpg?_nc_cat=103&_nc_oc=AQk44qO7rykxMSO9iCw1kLlTFTYu8LClZetHR97uvWxGL-AA7DfyxG7cZa0mh2jhT0s&_nc_ht=scontent.fgye1-1.fna&oh=43f70a1cc4bbe6ee21910ee117f25bc4&oe=5DAB5D2E"/>
-<foaf:phone rdf:resource="tel:0960137609"/>
-<foaf:workplaceHomepage rdf:resource="https://espe-el.espe.edu.ec"/>
-<foaf:workInfoHomepage rdf:resource="https://espe-el.espe.edu.ec"/>
-<foaf:schoolHomepage rdf:resource="https://espe-el.espe.edu.ec"/>
-<foaf:knows>
-<foaf:Person>
-<foaf:name>Ronny</foaf:name>
-<foaf:mbox_sha1sum>fa2edf65c5763ebb3b64840939223cc0b08b2dfc</foaf:mbox_sha1sum></foaf:Person></foaf:knows>
-<foaf:knows>
-<foaf:Person>
-<foaf:name>Borys</foaf:name>
-<foaf:mbox_sha1sum>bede9acf59442257257c737841e700db7ad36832</foaf:mbox_sha1sum></foaf:Person></foaf:knows>
-<foaf:knows>
-<foaf:Person>
-<foaf:name>Gonzalo</foaf:name>
-<foaf:mbox_sha1sum>5f7d4224d319b2be8411b0fd5bb33f95e57bda2e</foaf:mbox_sha1sum></foaf:Person></foaf:knows></foaf:Person>
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:cert="http://www.w3.org/ns/auth/cert#"
+         xmlns:dc="http://purl.org/dc/terms/">
+
+  <foaf:PersonalProfileDocument rdf:about="http://njh.me/foaf.rdf">
+    <rdfs:label>Nicholas Humfrey's FOAF File</rdfs:label>
+    <foaf:maker rdf:resource="http://njh.me/"/>
+    <foaf:primaryTopic rdf:resource="http://njh.me/"/>
+  </foaf:PersonalProfileDocument>
+
+  <foaf:Person rdf:about="http://njh.me/">
+    <foaf:name>Disney</foaf:name>
+    <foaf:title>Sr.</foaf:title>
+    <foaf:givenName>Disney1993</foaf:givenName>
+    <foaf:familyName>León Jiménez</foaf:familyName>
+    <owl:sameAs>
+      <foaf:Person rdf:about="http://disneywebdeveloper.tk/">
+        <rdfs:label>Disney León</rdfs:label>
+        <owl:sameAs rdf:resource="http://disneywebdeveloper.tk/"/>
+        <foaf:homepage rdf:resource="http://disneywebdeveloper.tk/"/>
+      </foaf:Person>
+    </owl:sameAs>
+
+    <owl:sameAs rdf:resource="http://disneywebdeveloper.tk/"/>
+    <cert:key>
+      <cert:RSAPublicKey>
+        <cert:modulus rdf:datatype="http://www.w3.org/2001/XMLSchema#hexBinary">CD86DF85BAD4EFD5D3F08B32040E70D5F64445FF5739B562498F1ECB0B381CDD74273DC17B488CDC09D1A832158FFEEDF179D3E061F8C73E2823CF4862EA2E3C3001C20563FB30CBC1E9939B05178F923991CC0EE6A30A564C74DA8686F5F94D65C41DBA558F0C606315DF87E1CC093D08F10BDF63DA9A96BEF2E842F700CB42BFD1404D90CDB5DF492523AF4D1CF382434BFB13BDFFE3DD077DCE98757B3CDA25E38F3F55BCBB33ACF674E2891B01DF5D7FDE3888A6559742492FDA74B544F140C1F4D356EE4ED1C801382C2F7524DB1FE41415A22340EE75B149AE8479B18B6B0EB10E9E865F0103E9BDC8E710E7EDF3E0D4ED809B88A2F19B43DC9B3DEF1D</cert:modulus>
+        <cert:exponent rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65537</cert:exponent>
+      </cert:RSAPublicKey>
+    </cert:key>
+    <foaf:based_near rdf:resource="http://dbpedialite.org/things/17867#id"/>
+    <foaf:gender>Male</foaf:gender>
+    <foaf:homepage rdf:resource="http://www.aelius.com/njh/"/>
+    <foaf:made rdf:resource="http://www.aelius.com/njh/"/>
+    <foaf:img rdf:resource="http://www.aelius.com/njh/me.jpg"/>
+  </foaf:Person>
+
+  <foaf:Document rdf:about="http://disneywebdeveloper.tk/">
+    <rdfs:label>Página de Disney León</rdfs:label>
+  </foaf:Document>
+
+  <rdf:Description rdf:about="https://github.com/disney1993/">
+    <dc:title>Página de github</dc:title>
+    <rdfs:label>github</rdfs:label>
+  </rdf:Description>
+
 </rdf:RDF>
->>>>>>> 0249bf7c8deed22e7e68d037a1e07a1bc23a36af
